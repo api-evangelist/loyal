@@ -1,8 +1,27 @@
 aid: loyal
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/loyal.png
 name: Loyal
-description: 'Loyal is a company surfaced as a portfolio company of bain-capital-ventures, first-round-capital
-  and added to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Loyal (Cellular Longevity, Inc.) is a clinical-stage veterinary biotechnology
+  company developing drugs intended to extend the healthy lifespan of dogs. Its lead
+  programs — including LOY-002 for metabolic dysfunction in senior dogs and LOY-001/LOY-003
+  for large- and giant-breed dogs — are advancing through the FDA Center for Veterinary
+  Medicine approval process, with more than 1,300 dogs enrolled across clinical studies.
+  Loyal also runs a veterinary Learning Hub for practitioner education. The company is
+  backed by Bain Capital Ventures and First Round Capital. As of this enrichment pass
+  Loyal publishes no public developer API, OpenAPI/AsyncAPI specification, SDK, MCP server,
+  or /.well-known discovery surface; this profile captures its public web identity and
+  a live domain-security probe.'
 url: https://raw.githubusercontent.com/api-evangelist/loyal/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Healthcare
+- Biotechnology
+- Veterinary
+- Animal Health
+- Pharmaceuticals
+- Longevity
+- Life Sciences
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,4 +50,17 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://loyalfordogs.com/
+  url: https://loyal.com/
+- type: DomainSecurity
+  url: security/loyal-domain-security.yml
+- type: Blog
+  url: https://loyal.com/blog
+- type: PrivacyPolicy
+  url: https://loyal.com/privacy-policy
+- type: Support
+  url: https://loyal.com/contact
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
